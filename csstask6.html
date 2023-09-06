@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photocontainer {
+          border: 1px solid black;
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          background-image: url(cc.png);
+          background-size: cover; /* This scales the image to cover the entire container */
+          background-position: center; /* This centers the image within the container */
+          margin-left: 10%;
+        }
+        .container{
+            width: 400px;
+            margin-left: 45%;
+            margin-top: 150px;
+            margin-right: 200px
+        }
+        input{
+            display: block;
+        }
+        .footerdiv{
+            display: flex;
+            justify-content: space-between;
+            width: 260px;
+            background-color: lightgray;
+            height: 60px;
+            align-items: center;
+            
+        }
+        #log-b{
+            width: 180px;
+            margin-top: 20px;
+            width: 260px;
+            height: 30px;
+            background-color: lightgreen;
+        }
+        .field{
+            height: 30px;
+            width: 250px;
+        }
+        #cb{
+           display: inline-block;
+        }
+        .cb{
+            display: flex;
+        }
+        #canb{
+            background-color: red;
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photocontainer">
+            
+        </div>
+        <h4>Username</h4>
+        <input type="text" placeholder="Enter username" class="field">
+        <h4>Password</h4>
+        <input type="text" placeholder="Enter Password" class="field">
+        <input type="submit" value="login" id="log-b">
+        <div class="cb">
+            <input type="checkbox" id="cb"><p>Remember me</p>
+        </div>
+        
+        <div class="footerdiv">
+            <input type="submit" value="cancel" id="canb">
+            <a href="#">Forgot paassword</a>
+        </div>
+    </div>
+</body>
+</html>

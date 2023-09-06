@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       body{
+        background-color: yellow;
+        padding: 100px;
+        color: rgb(150, 28, 150);
+        display: flex;
+        justify-content: space-evenly;
+       }
+       .minbox{
+          width: 200px;
+          height: 30px;
+          border: 1px solid black;
+          background-color: white;
+          display: flex;
+       }
+       .mincontainer{
+        height: 49px;
+        width: 169px;
+        display: flex;
+        
+       }
+       .blackbox{
+        height: max-content;
+        width: 15%;
+        height: 100%;
+        background-color: black;
+       }
+       .container{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+       }
+       h1{
+        font:bold;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="minbox">
+            <div class="mincontainer">Home Page</div>
+            <div class="blackbox"></div>
+        </div>
+        <div class="minbox">
+            <div class="mincontainer">Musings</div>
+            <div class="blackbox"></div>
+        </div>
+        <div class="minbox">
+            <div class="mincontainer">My town</div>
+            <div class="blackbox"></div>
+        </div>
+        <div class="minbox">
+            <div class="mincontainer">Links</div>
+            <div class="blackbox"></div>
+        </div>
+    </div>
+    <div class="textcontent">
+        <h1>My first styled page</h1>
+        <p>Welcome to my Styled Page!!</p>
+        <p>it lacks images, but at least it has style. And it has links , even if they dont't go anywhere </p>
+        <p>There should be more here, but I don't know what yet.</p>
+        <hr>
+        <h4>Made 5 september 2023</h4>
+        <h4>by myself</h4>
+    </div>
+</body>
+</html>

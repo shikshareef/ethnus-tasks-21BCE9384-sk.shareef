@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+            width: 170px;
+            height: 40px;
+            color: blue;
+            
+        }
+        .verticalnavbar{
+            height: fit-content;
+            width: 180px ;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .box:hover{
+            background-color: orange;
+            
+        }
+        .hcontainer{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }
+        .hbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+            width: 100px;
+            height: 40px;
+            background-color: lightgray;
+            color:blue;
+            border: 1px solid blue;
+        }
+        .horizontalnavbar{
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction:row;
+            
+            border :1px solid black;
+            padding: 5px;
+        }
+        .hbox:hover{
+            background-color: grey;
+        }
+        body{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>vertical navigation bar</p>
+        <div class="verticalnavbar">
+            <div class="box">HOME</div>
+            <div class="box">CSS</div>
+            <div class="box">JAVA</div>
+            <div class="box">BOOTSTRAP</div>
+            <div class="box">HTML</div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="hcontainer">
+            <p>horizontal navigation bar</p>
+            <div class="horizontalnavbar">
+                <div class="hbox">HOME</div>
+                <div class="hbox">CSS</div>
+                <div class="hbox">JAVA</div>
+                <div class="hbox">BOOTSTRAP</div>
+                <div class="hbox">HTML</div>
+            </div>
+    </div>
+</body>
+</html>
